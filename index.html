@@ -5,39 +5,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BarberShop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
     <!-- header section -->
-    <header>
-        <a href="">
-            <img src="./img/logo.svg" alt="логотип барбершопа">
+    <header class="header">
+        <a class="logo link" href="./index.html" aria-label="логотип сайта">
+            <img class="logo-img" src="./img/logo.svg" alt="логотип">
         </a>
-        <nav>
-            <ul>
-                <li><a href="#about">О нас</a></li>
-                <li><a href="#prices">Услуги и цены</a></li>
-                <li><a href="#masters">Мастера</a></li>
-                <li><a href="#contacts">Контакты</a></li>
+        <nav class="nav-list navigation">
+            <ul class="list">
+                <li class="nav-list-item">
+                    <a class="nav-list-link link" href="#about">О нас</a>
+                </li>
+                <li class="nav-list-item">
+                    <a class="nav-list-link link" href="#prices">Услуги и цены</a>
+                </li>
+                <li class="nav-list-item">
+                    <a class="nav-list-link link" href="#masters">Мастера</a>
+                </li>
+                <li class="nav-list-item">
+                    <a class="nav-list-link link" href="#contacts">Контакты</a>
+                </li>
             </ul>
         </nav>
-        <a href="tel:+380441111111">+38 044 111 11 11</a>
-        <button type="button">онлайн-запись</button>
+        <a class="contact-number link" href="tel:+380441111111">+38 044 111 11 11</a>
+        <button class="modal-btn" type="button">онлайн-запись</button>
     </header>
     <main>
         <!-- hero section -->
-        <section>
-            <ul>
-                <li><a href="" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-                <li><a href="" target="_blank" rel="noopener noreferrer">Youtube</a></li>
-            </ul>
-            <p lang="en">A hair salon for men in Kyiv</p>
-            <h1 lang="en">BarberShop</h1>
-            <p>Мы эксперты в модных мужских стрижках<br>
-                Работаем быстро, осторожно и со вкусом.</p>
+        <section class="hero">
+            <div class="hero-left-side">
+                <ul class="social-hero list">
+                    <li class="social-hero-item">
+                        <a class="social-hero-link link" href="" target="_blank" rel="noopener noreferrer">Instagram</a>
+                    </li>
+                    <li class="social-hero-item">
+                        <a class="social-hero-link link" href="" target="_blank" rel="noopener noreferrer">Youtube</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="hero-right-side">
+                <p class="overtitle" lang="en">A hair salon for men in Kyiv</p>
+                <h1 class="hero-title" lang="en">BarberShop</h1>
+                <p class="description">Мы эксперты в модных мужских стрижках<br>
+                    Работаем быстро, осторожно и со вкусом.</p>
+            </div>
         </section>
         <!-- about us -->
         <section id="about">
-            <ul>
+            <ul class="list">
                 <li><img src="./img/about-img-1.jpg" alt="барбер ровняет бороду" width="270" height="445"></li>
                 <li><img src="./img/about-img-2.jpg" alt="барбер бреет затылок" width="270" height="445"></li>
             </ul>
@@ -58,7 +79,7 @@
         <section id="prices">
             <p>Проведи время в компании лучших мастеров</p>
             <h2>Услуги и цены</h2>
-            <ul>
+            <ul class="list">
                 <li>
                     <p>Мужская стрижка</p>
                     <p>от 300 грн.</p>
@@ -76,7 +97,7 @@
                     <p>от 200 грн.</p>
                 </li>
             </ul>
-            <ul>
+            <ul class="list">
                 <li>
                     <p>Cтрижка у стажера</p>
                     <p>от 50 грн.</p>
@@ -98,7 +119,7 @@
         </section>
         <!-- revievs section -->
         <section>
-            <ul>
+            <ul class="list">
                 <li
                 ><span>600</span>
                 <p>Довольных клиентов в день</p>
@@ -124,7 +145,7 @@
         <section id="masters">
             <p>Для настоящих ценителей атмосферы</p>
             <h2>Наши мастера</h2>
-            <ul>
+            <ul class="list">
                 <li>
                     <img src="./img/master-1.jpg" alt="барбер стрижет клиента" width="370" height="346">
                     <h3 lang="en">John Smith</h3>
@@ -146,7 +167,7 @@
         <section>
             <h2>Галерея</h2>
             <p>На латинском языке “барба” означает “борода”</p>
-            <ul>
+            <ul class="list">
                 <li>
                     <img src="./img/barber.jpg" alt="барбер стрижет клиента" width="270" height="360">
                 </li>
@@ -171,7 +192,7 @@
             <address>
                 <p>ул. Васильковская, 7А
                 Киев, 08132</p>
-                <a href="tel:+380441111111">+38 044 111 11 11</a>
+                <a class="link" href="tel:+380441111111">+38 044 111 11 11</a>
                 <a href="mailto:barbershop@email.com">barbershop@email.com</a>
             </address>
             <b>Время работы</b>
@@ -180,9 +201,9 @@
     </main>
     <footer>
         <p>&copy; Copyright 2020</p>
-        <ul>
-            <li><a href="" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-            <li><a href="" target="_blank" rel="noopener noreferrer">Youtube</a></li>
+        <ul class="list">
+            <li><a class="link" href="" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+            <li><a class="link" href="" target="_blank" rel="noopener noreferrer">Youtube</a></li>
         </ul>
     </footer>
 </body>
