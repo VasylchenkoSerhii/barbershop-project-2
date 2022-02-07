@@ -29,6 +29,9 @@ body {
 
   color: var(--secondary-text-color-theme-dark);
 }
+.modal-btn.light {
+  color: var(--secondary-text-color-theme-light);
+}
 .modal-btn:hover,
 .modal-btn:focus {
   background-color: var(--accent-color);
@@ -58,7 +61,6 @@ body {
   color: var(--secondary-text-color-theme-light);
 }
 .description {
-  font-weight: 400;
   font-size: 18px;
   line-height: 1.67;
   letter-spacing: 0.02em;
@@ -188,3 +190,13 @@ body {
   color: var(--primary-text-color-theme-dark);
 }
 /* =========end contacts section============= */
+/* ==========start footer==================== */
+.copyright {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+
+  color: var(--primary-text-color-theme-dark);
+}
+/* ===========end footer===================== */
