@@ -54,6 +54,9 @@ body {
 
   color: var(--text-color-hero-overtitle);
 }
+.overtitle.light {
+  color: var(--secondary-text-color-theme-light);
+}
 .description {
   font-weight: 400;
   font-size: 18px;
@@ -61,6 +64,21 @@ body {
   letter-spacing: 0.02em;
 
   color: var(--primary-text-color-theme-dark);
+}
+.description.light {
+  color: var(--primary-text-color-theme-light);
+}
+.section-title {
+  font-family: var(--secondary-font-family);
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+
+  color: var(--secondary-text-color-theme-light);
+}
+.section-title.dark {
+  /* color: var(--secondary-text-color-theme-dark); */
 }
 /* =======and components======== */
 /* =======start header====== */
@@ -100,3 +118,73 @@ body {
   /* color: #ffffff; */
 }
 /* =========end hero========= */
+/* =========start about us======= */
+.text-description {
+  font-size: 14px;
+  line-height: 1.85;
+  letter-spacing: 0.02em;
+
+  color: var(--primary-text-color-theme-light);
+}
+/* =========end about us========= */
+/* =========start prices section======= */
+.price-one-list,
+.price-two-list {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+
+  color: var(--primary-text-color-theme-dark);
+}
+/* =========end prices section========= */
+/* =========start differences section======== */
+.differences-list {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  /* text-align: center; */
+
+  color: var(--secondary-text-color-theme-light);
+}
+.number-differences {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.36;
+  /* text-align: center; */
+  letter-spacing: 0.05em;
+}
+/* =========end differences section========== */
+/* =========start our masters section======== */
+.masters-list h3 {
+  font-size: 18px;
+  line-height: 1.39;
+  /* text-align: center; */
+  letter-spacing: 0.02em;
+
+  color: var(--secondary-text-color-theme-light);
+}
+.master-position {
+  font-size: 14px;
+  line-height: 1.36;
+  /* text-align: center; */
+  letter-spacing: 0.02em;
+
+  color: var(--accent-color);
+}
+/* =========end our masters section========== */
+/* =========start contacts section=========== */
+.address-link {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+
+  color: var(--primary-text-color-theme-dark);
+}
+.time-work {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+
+  color: var(--primary-text-color-theme-dark);
+}
+/* =========end contacts section============= */
