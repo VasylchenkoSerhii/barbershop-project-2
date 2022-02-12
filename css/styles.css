@@ -90,6 +90,7 @@ address {
   line-height: 1.36;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  margin-bottom: 20px;
 
   color: var(--text-color-hero-overtitle);
 }
@@ -174,7 +175,13 @@ header {
 /* =========end header======= */
 
 /* =========start hero======= */
-
+.hero-section-location {
+  display: flex;
+  /* align-items: center; */
+}
+.hero-left-side {
+  margin-right: 30px;
+}
 .hero-title {
   font-family: var(--secondary-font-family);
   font-weight: 700;
@@ -225,13 +232,28 @@ header {
 .our-masters-section {
   background-color: var(--secondary-background-color);
 }
+.masters-list {
+  display: flex;
+  flex-basis: calc((100% - 90px) / 3);
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
 .masters-list h3 {
   font-size: 18px;
   line-height: 1.39;
   text-align: center;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 
   color: var(--secondary-text-color-theme-light);
+}
+.masters-list-item {
+  margin-left: 30px;
+  margin-top: 30px;
+}
+.masters-list-item-content {
+  padding-top: 30px;
 }
 .master-position {
   font-size: 14px;
@@ -240,6 +262,9 @@ header {
   letter-spacing: 0.02em;
 
   color: var(--accent-color);
+}
+.section-title.masters {
+  margin-bottom: 44px;
 }
 /* =========end our masters section========== */
 /* =========start contacts section=========== */
