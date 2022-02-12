@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BarberShop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
@@ -14,27 +17,29 @@
 <body>
     <!-- header section -->
     <header class="header">
-        <a class="logo link" href="./index.html" aria-label="логотип сайта">
-            <img class="logo-img" src="./img/logo.svg" alt="логотип">
-        </a>
-        <nav class="nav-list navigation">
-            <ul class="list">
-                <li class="nav-list-item">
-                    <a class="nav-list-link link" href="#about">О нас</a>
-                </li>
-                <li class="nav-list-item">
-                    <a class="nav-list-link link" href="#prices">Услуги и цены</a>
-                </li>
-                <li class="nav-list-item">
-                    <a class="nav-list-link link" href="#masters">Мастера</a>
-                </li>
-                <li class="nav-list-item">
-                    <a class="nav-list-link link" href="#contacts">Контакты</a>
-                </li>
-            </ul>
-        </nav>
-        <a class="contact-number link" href="tel:+380441111111">+38 044 111 11 11</a>
-        <button class="modal-btn" type="button">онлайн-запись</button>
+        <div class="container header-container">
+            <nav class="navigation">
+                <a class="logo link" href="./index.html" aria-label="логотип сайта">
+                    <img class="logo-img" src="./img/logo.svg" alt="логотип" width="67" height="54">
+                </a>
+                <ul class="nav-list list">
+                    <li class="nav-list-item">
+                        <a class="nav-list-link link" href="#about">О нас</a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a class="nav-list-link link" href="#prices">Услуги и цены</a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a class="nav-list-link link" href="#masters">Мастера</a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a class="nav-list-link link" href="#contacts">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <a class="contact-number link" href="tel:+380441111111">+38 044 111 11 11</a>
+            <button class="modal-btn" type="button">онлайн-запись</button>
+            </div>
     </header>
     <main>
         <!-- hero section -->
@@ -142,26 +147,28 @@
             <p class="description light">О нас говорят только хорошее. Но лучше 1 раз увидеть и прочувствовать, чем 10 раз прочитать.</p>
         </section>
         <!-- our masters -->
-        <section class="section" id="masters">
-            <p class="overtitle light">Для настоящих ценителей атмосферы</p>
-            <h2 class="section-title">Наши мастера</h2>
-            <ul class="masters-list list">
-                <li class="masters-list-item">
-                    <img src="./img/master-1.jpg" alt="барбер стрижет клиента" width="370" height="346">
-                    <h3 lang="en">John Smith</h3>
-                    <p class="master-position" lang="en">Extreme Barber</p>
-                </li>
-                <li class="masters-list-item">
-                    <img src="./img/master-2.jpg" alt="барбер стрижет клиента" width="370" height="346">
-                    <h3 lang="en">Michele Doe</h3>
-                    <p class="master-position" lang="en">Extreme Barber</p>
-                </li>
-                <li class="masters-list-item">
-                    <img src="./img/master-3.jpg" alt="барбер стрижет клиента" width="370" height="346">
-                    <h3 lang="en">Alan Black</h3>
-                    <p class="master-position" lang="en">Extreme Barber</p>
-                </li>
-            </ul>
+        <section class="our-masters-section section" id="masters">
+            <div class="container">
+                <p class="overtitle light">Для настоящих ценителей атмосферы</p>
+                <h2 class="section-title">Наши мастера</h2>
+                <ul class="masters-list list">
+                    <li class="masters-list-item">
+                        <img src="./img/master-1.jpg" alt="барбер стрижет клиента" width="370" height="346">
+                        <h3 lang="en">John Smith</h3>
+                        <p class="master-position" lang="en">Extreme Barber</p>
+                    </li>
+                    <li class="masters-list-item">
+                        <img src="./img/master-2.jpg" alt="барбер стрижет клиента" width="370" height="346">
+                        <h3 lang="en">Michele Doe</h3>
+                        <p class="master-position" lang="en">Extreme Barber</p>
+                    </li>
+                    <li class="masters-list-item">
+                        <img src="./img/master-3.jpg" alt="барбер стрижет клиента" width="370" height="346">
+                        <h3 lang="en">Alan Black</h3>
+                        <p class="master-position" lang="en">Extreme Barber</p>
+                    </li>
+                </ul>
+            </div>
         </section>
         <!-- galery section -->
         <section>
