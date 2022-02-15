@@ -72,6 +72,11 @@ address {
 .modal-btn:focus {
   background-color: var(--accent-color);
 }
+.modal-btn.prices {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
 .social-hero-link {
   font-weight: 600;
   font-size: 11px;
@@ -108,6 +113,8 @@ address {
   color: var(--primary-text-color-theme-light);
 }
 .section-title {
+  margin-bottom: 20px;
+
   font-family: var(--secondary-font-family);
   font-weight: 700;
   font-size: 42px;
@@ -117,6 +124,7 @@ address {
   color: var(--secondary-text-color-theme-light);
 }
 .section-title.dark {
+  margin-bottom: 44px;
   /* color: var(--secondary-text-color-theme-dark); */
 }
 .section {
@@ -193,12 +201,30 @@ header {
 }
 /* =========end hero========= */
 /* =========start about us======= */
+.about-us {
+  display: flex;
+  align-items: center;
+}
+.about-us-list {
+  display: flex;
+}
+.about-us-item {
+  margin-right: 30px;
+}
+.content-about-us {
+  margin-left: 64px;
+}
 .text-description {
+  margin-bottom: 40px;
+
   font-size: 14px;
   line-height: 1.85;
   letter-spacing: 0.02em;
 
   color: var(--primary-text-color-theme-light);
+}
+.description.about-us {
+  margin-bottom: 20px;
 }
 /* =========end about us========= */
 /* =========start prices section======= */
@@ -209,6 +235,21 @@ header {
   letter-spacing: 0.02em;
 
   color: var(--primary-text-color-theme-dark);
+}
+.price-boxes {
+  display: flex;
+  /* align-items: center; */
+}
+.price-one-list,
+.price-two-list {
+  padding: 30px 40px;
+  margin-bottom: 50px;
+}
+.price-one-list-item {
+  display: flex;
+}
+.price-two-list-item {
+  display: flex;
 }
 /* =========end prices section========= */
 /* =========start differences section======== */
