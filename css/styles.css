@@ -48,6 +48,10 @@ address {
   margin-right: auto;
 }
 /* =======start components====== */
+.section {
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
 .modal-btn {
   min-width: 160px;
   padding: 12px 16px;
@@ -126,10 +130,6 @@ address {
 .section-title.dark {
   margin-bottom: 44px;
   /* color: var(--secondary-text-color-theme-dark); */
-}
-.section {
-  padding-top: 130px;
-  padding-bottom: 130px;
 }
 /* =======and components======== */
 /* =======start header====== */
@@ -216,6 +216,7 @@ header {
 }
 .text-description {
   margin-bottom: 40px;
+  max-width: 480px;
 
   font-size: 14px;
   line-height: 1.85;
@@ -253,20 +254,55 @@ header {
 }
 /* =========end prices section========= */
 /* =========start differences section======== */
+.differences-container {
+  display: flex;
+  /* justify-content: space-between; */
+}
+.differences-left-side {
+  margin-right: 130px;
+}
 .differences-list {
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-  /* text-align: center; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 370px;
+  /* margin: 0 auto; */
+}
+.differences-list-item {
+  width: 170px;
+  min-height: 134px;
+  padding: 20px;
 
-  color: var(--secondary-text-color-theme-light);
+  background: #f7f7f7;
+}
+.differences-list-item:nth-child(even) {
+  margin-top: 30px;
 }
 .number-differences {
+  margin-bottom: 6px;
+
   font-weight: 700;
   font-size: 42px;
   line-height: 1.36;
-  /* text-align: center; */
+  text-align: center;
   letter-spacing: 0.05em;
+
+  color: var(--secondary-text-color-theme-light);
+}
+.defferences-list-description {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-align: center;
+
+  color: var(--secondary-text-color-theme-light);
+}
+.section-title.defferences {
+  max-width: 480px;
+}
+.description.defferences {
+  max-width: 480px;
 }
 /* =========end differences section========== */
 /* =========start our masters section======== */
@@ -308,6 +344,37 @@ header {
   margin-bottom: 44px;
 }
 /* =========end our masters section========== */
+/* =========start galery section========= */
+.overtitle.galery {
+  margin-bottom: 44px;
+}
+.galery-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+.galery-list-item {
+  margin-left: 30px;
+  margin-top: 30px;
+}
+/* ==========end galery section=========== */
+/* ==========start contacts========== */
+.contacts {
+  display: flex;
+}
+.online-form {
+  min-width: 600px;
+}
+.contacts-section {
+  padding-left: 100px;
+}
+.address-list-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+.address-list-item:last-child {
+  margin-bottom: 70px;
+}
 /* =========start contacts section=========== */
 .address-link {
   font-size: 18px;
@@ -322,6 +389,9 @@ header {
   letter-spacing: 0.02em;
 
   color: var(--primary-text-color-theme-dark);
+}
+.overtitle.time {
+  margin-bottom: 20px;
 }
 /* =========end contacts section============= */
 /* ==========start footer==================== */
